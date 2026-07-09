@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Vyapaar One</string>
+
+    <string-array name="units">
+        <item>kg</item>
+        <item>g</item>
+        <item>litre</item>
+        <item>ml</item>
+        <item>pcs</item>
+    </string-array>
+
+</resources>

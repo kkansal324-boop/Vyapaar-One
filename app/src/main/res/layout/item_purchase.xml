@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Supplier -->
+
+        <TextView
+            android:id="@+id/txtSupplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supplier"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <!-- Product -->
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Product"
+            android:textSize="17sp"
+            android:textColor="#444444"/>
+
+        <!-- Quantity -->
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Qty : 0"/>
+
+        <!-- Purchase Price -->
+
+        <TextView
+            android:id="@+id/txtPurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : ₹0"/>
+
+        <!-- Total -->
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : ₹0"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"/>
+
+        <!-- Date -->
+
+        <TextView
+            android:id="@+id/txtPurchaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="01/01/2026"/>
+
+        <!-- Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEditPurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#1976D2"/>
+
+            <Button
+                android:id="@+id/btnDeletePurchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#D32F2F"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

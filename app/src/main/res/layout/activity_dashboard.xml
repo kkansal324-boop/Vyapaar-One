@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Profile -->
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:background="@android:color/white"
+            android:padding="12dp"/>
+
+        <!-- App Title -->
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Vyapaar One"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:textSize="34sp"/>
+
+        <!-- Subtitle -->
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"
+            android:text="Smart Business Management"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <!-- Welcome Card -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👋 Welcome"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Manage your products, inventory, orders, reports and bills from one place."
+                    android:textSize="16sp"
+                    android:textColor="#555555"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Dashboard Buttons -->
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="➕  Add Product"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5C6BC0"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnViewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📦  View Products"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#26A69A"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnCustomers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="👥  Customers"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#8E24AA"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnCustomerLedger"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📒  Customer Ledger"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#3949AB"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnSuppliers"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="14dp"
+            android:text="🚚  Suppliers"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6D4C41"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnSupplierLedger"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📒 Supplier Ledger"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#5D4037"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnAddPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="🛍️  Add Purchase"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00897B"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnPurchaseHistory"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📋  Purchase History"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00796B"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnPurchaseReturn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="↩ Purchase Return"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:backgroundTint="#EF6C00"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnStockMovement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock Movement History"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btnInventorySummary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📊  Inventory Summary"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFA726"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnOrders"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="🛒  Orders"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#42A5F5"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnBills"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="🧾  Bills"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#66BB6A"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnProfitLoss"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="💹 Profit &amp; Loss"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00897B"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnReports"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="📈  Reports"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#AB47BC"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnBusinessProfile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="14dp"
+            android:text="🏢  Business Profile"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00897B"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🔐 Change Password"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#D32F2F"
+            android:text="🚪  Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:text="Vyapaar One • Version 1.0"
+            android:textColor="#616161"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

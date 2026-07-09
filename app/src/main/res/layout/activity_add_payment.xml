@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receive Payment"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Order Info -->
+        <TextView
+            android:id="@+id/txtOrderInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order ID"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:drawableStart="@android:drawable/ic_menu_info_details" />
+
+        <!-- Customer -->
+        <TextView
+            android:id="@+id/txtCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:drawableStart="@android:drawable/ic_menu_myplaces" />
+
+        <!-- Order Total -->
+        <TextView
+            android:id="@+id/txtOrderTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:padding="8dp"
+            android:drawableStart="@android:drawable/ic_menu_sort_by_size" />
+
+        <!-- Paid Amount -->
+        <EditText
+            android:id="@+id/edtPaidAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Paid Amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Pending Amount -->
+        <TextView
+            android:id="@+id/txtPendingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending Amount"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:padding="8dp"
+            android:drawableStart="@android:drawable/stat_notify_error" />
+
+        <!-- Payment Method -->
+        <Spinner
+            android:id="@+id/spinnerPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSavePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Payment"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

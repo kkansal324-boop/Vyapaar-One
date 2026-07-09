@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    android:padding="16dp">
+
+    <!-- Title -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase History"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etSearchPurchase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Search Purchase..."
+            android:padding="12dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:background="@android:color/transparent"
+            android:inputType="text"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add Purchase -->
+
+    <Button
+        android:id="@+id/btnAddPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="➕ Add Purchase"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Empty Message -->
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Purchase Found"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

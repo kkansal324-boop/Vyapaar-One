@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    app:cardCornerRadius="16dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/txtProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📦 Rice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#DDDDDD"/>
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📦 Stock : 120 Kg"
+            android:textSize="16sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="💰 Price : ₹50 / Kg"
+            android:textSize="16sp"
+            android:textColor="#424242"/>
+
+        <TextView
+            android:id="@+id/txtMinMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="📊 Min : 20    Max : 200"
+            android:textSize="15sp"
+            android:textColor="#616161"/>
+
+        <TextView
+            android:id="@+id/txtStockStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="🟢 Normal Stock"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#2E7D32"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

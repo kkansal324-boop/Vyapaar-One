@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="35dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <!-- Supplier Name -->
+
+        <TextView
+            android:id="@+id/txtSupplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC Traders"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#212121"/>
+
+        <!-- Company -->
+
+        <TextView
+            android:id="@+id/txtCompany"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC Pvt. Ltd."
+            android:textSize="15sp"
+            android:textColor="#616161"
+            android:layout_marginTop="3dp"/>
+
+        <!-- Mobile -->
+
+        <TextView
+            android:id="@+id/txtMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9876543210"
+            android:textSize="15sp"
+            android:textColor="#424242"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <!-- Balance -->
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="₹ 0.00"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#2E7D32"/>
+
+            <!-- Debit / Credit -->
+
+            <TextView
+                android:id="@+id/txtBalanceType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="#2E7D32"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

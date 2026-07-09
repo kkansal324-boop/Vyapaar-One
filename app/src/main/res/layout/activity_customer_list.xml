@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <!-- Back Button -->
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="@android:color/white"/>
+
+    <!-- Heading -->
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="👥 Customers"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <!-- Subtitle -->
+
+    <TextView
+        android:id="@+id/txtSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Manage Your Customers"
+        android:textSize="15sp"
+        android:textColor="#555555"/>
+
+    <!-- Add Customer -->
+
+    <Button
+        android:id="@+id/btnAddCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSubHeading"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="➕ Add Customer"
+        android:textAllCaps="false"/>
+
+    <!-- Customer List -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/btnAddCustomer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="12dp"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>
